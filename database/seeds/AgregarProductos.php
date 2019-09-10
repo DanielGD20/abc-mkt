@@ -1,5 +1,6 @@
 <?php
 
+use App\combos;
 use App\productos;
 use Illuminate\Database\Seeder;
 
@@ -136,12 +137,250 @@ class AgregarProductos extends Seeder
         productos::create([
             'nombre' => 'Otros',
             'slug' => 'otros',
-            'detalle' => 'Imágenes que no se encuentran dentro de nuestro catalogo',
+            'detalle' => 'Opciones que no se encuentran dentro de nuestro catalogo',
             'precio' => 0,
             'descripcion' => '',
-            'categoria' => 'Artes',
+            'categoria' => 'Otros',
             'tipo' => 'Otros',
             'imagen' => 'otros.jpg'
+        ]);
+
+
+        // final de artes
+
+        productos::create([
+            'nombre' => 'Funda de regalo',
+            'slug' => 'funda-regalo',
+            'detalle' => 'Funda utilizada para almacenar productos',
+            'precio' => 1.05,
+            'descripcion' => 'Funda utilizada para almacenar productos',
+            'categoria' => 'Articulos-Promocionales',
+            'tipo' => 'Fisico',
+            'imagen' => 'funda-de-regalo.jpg'
+        ]);
+
+        productos::create([
+            'nombre' => 'Esfero',
+            'slug' => 'esfero',
+            'detalle' => 'Esfero con logo UEES',
+            'precio' => 0.37,
+            'descripcion' => 'Esfero con logo UEES',
+            'categoria' => 'Articulos-Promocionales',
+            'tipo' => 'Fisico',
+            'imagen' => 'esfero.jpg'
+        ]);
+
+        productos::create([
+            'nombre' => 'Taza',
+            'slug' => 'taza',
+            'detalle' => 'Taza conmemorativa con logo UEES',
+            'precio' => 3.80,
+            'descripcion' => 'Taza conmemorativa con logo UEES',
+            'categoria' => 'Articulos-Promocionales',
+            'tipo' => 'Fisico',
+            'imagen' => 'taza.jpg'
+        ]);
+
+        productos::create([
+            'nombre' => 'Libreta Roja',
+            'slug' => 'libreta-roja',
+            'detalle' => 'Libreta roja básica conmemorativa con logo UEES',
+            'precio' => 1.25,
+            'descripcion' => 'Libreta roja básica conmemorativa con logo UEES',
+            'categoria' => 'Articulos-Promocionales',
+            'tipo' => 'Fisico',
+            'imagen' => 'libreta-roja.jpg'
+        ]);
+
+        productos::create([
+            'nombre' => 'Libreta Negra',
+            'slug' => 'libreta-negra',
+            'detalle' => 'Libreta negra premium conmemorativa con logo UEES',
+            'precio' => 1.25,
+            'descripcion' => 'Libreta negra premium conmemorativa con logo UEES',
+            'categoria' => 'Articulos-Promocionales',
+            'tipo' => 'Fisico',
+            'imagen' => 'libreta-negra.jpg'
+        ]);
+
+        productos::create([
+            'nombre' => 'Libreta engomada A4',
+            'slug' => 'libreta-engomada-a4',
+            'detalle' => 'Libreta engomada A4 conmemorativa con logo UEES',
+            'precio' => 0.6,
+            'descripcion' => 'Libreta engomada A4 conmemorativa con logo UEES',
+            'categoria' => 'Articulos-Promocionales',
+            'tipo' => 'Fisico',
+            'imagen' => 'libreta-engomada-a4.jpg'
+        ]);
+
+        productos::create([
+            'nombre' => 'Libreta engomada A5',
+            'slug' => 'libreta-engomada-a5',
+            'detalle' => 'Libreta engomada A5 conmemorativa con logo UEES',
+            'precio' => 0.45,
+            'descripcion' => 'Libreta engomada A5 conmemorativa con logo UEES',
+            'categoria' => 'Articulos-Promocionales',
+            'tipo' => 'Fisico',
+            'imagen' => 'libreta-engomada-a5.jpg'
+        ]);
+
+        productos::create([
+            'nombre' => 'Libreta Anillada',
+            'slug' => 'libreta-anillada',
+            'detalle' => 'Libreta anillada conmemorativa con logo UEES',
+            'precio' => 1.25,
+            'descripcion' => 'Libreta anillada conmemorativa con logo UEES',
+            'categoria' => 'Articulos-Promocionales',
+            'tipo' => 'Fisico',
+            'imagen' => 'libreta-anillada.jpg'
+        ]);
+
+        productos::create([
+            'nombre' => 'Carpetas',
+            'slug' => 'carpetas',
+            'detalle' => 'Carpetas conmemorativas con logo UEES',
+            'precio' => 0.65,
+            'descripcion' => 'Libreta anillada conmemorativa con logo UEES',
+            'categoria' => 'Articulos-Promocionales',
+            'tipo' => 'Fisico',
+            'imagen' => 'libreta-anillada.jpg'
+        ]);
+
+        productos::create([
+            'nombre' => 'Sobres membretados',
+            'slug' => 'sobres',
+            'detalle' => 'Sobres membretados conmemorativas con logo UEES',
+            'precio' => 0.12,
+            'descripcion' => 'Sobres membretados conmemorativas con logo UEES',
+            'categoria' => 'Articulos-Promocionales',
+            'tipo' => 'Fisico',
+            'imagen' => 'sobres-membretados.jpg'
+        ]);
+
+        productos::create([
+            'nombre' => 'Hojas membretadas',
+            'slug' => 'hojas',
+            'detalle' => 'Hojas membretadas conmemorativas con logo UEES',
+            'precio' => 0.06,
+            'descripcion' => 'Hojas membretadas conmemorativas con logo UEES',
+            'categoria' => 'Articulos-Promocionales',
+            'tipo' => 'Fisico',
+            'imagen' => 'hojas-membretadas.jpg'
+        ]);
+
+        productos::create([
+            'nombre' => 'Cartolas / Credenciales',
+            'slug' => 'cartolas',
+            'detalle' => 'Cartolas y credenciales con diseño UEES',
+            'precio' => 0.4,
+            'descripcion' => 'Cartolas y credenciales con diseño UEES',
+            'categoria' => 'Articulos-Promocionales',
+            'tipo' => 'Fisico',
+            'imagen' => 'cartolas.jpg'
+        ]);
+
+        productos::create([
+            'nombre' => 'Lanyers',
+            'slug' => 'lanyers',
+            'detalle' => 'Lanyers para el uso de credenciales con logo UEES',
+            'precio' => 0.45,
+            'descripcion' => 'Lanyers para el uso de credenciales con logo UEES',
+            'categoria' => 'Articulos-Promocionales',
+            'tipo' => 'Fisico',
+            'imagen' => 'lanyers.jpg'
+        ]);
+
+        productos::create([
+            'nombre' => 'Gorras',
+            'slug' => 'gorras',
+            'detalle' => 'Gorras conmemorativas con logo UEES',
+            'precio' => 3.80,
+            'descripcion' => 'Gorras conmemorativas con logo UEES',
+            'categoria' => 'Articulos-Promocionales',
+            'tipo' => 'Fisico',
+            'imagen' => 'gorras.jpg'
+        ]);
+
+        productos::create([
+            'nombre' => 'Camisetas Polo',
+            'slug' => 'camisetas-polo',
+            'detalle' => 'Camisetas Polo con diseño UEES en diferentes colores',
+            'precio' => 7.90,
+            'descripcion' => 'Camisetas Polo con diseño UEES en diferentes colores',
+            'categoria' => 'Articulos-Promocionales',
+            'tipo' => 'Fisico',
+            'imagen' => 'camisetas-polo.jpg'
+        ]);
+
+        productos::create([
+            'nombre' => 'Bolsos Cambrela',
+            'slug' => 'bolsos-cambrela',
+            'detalle' => 'Bolsos multiuso con logo UEES',
+            'precio' => 0.45,
+            'descripcion' => 'Bolsos multiuso con logo UEES',
+            'categoria' => 'Articulos-Promocionales',
+            'tipo' => 'Fisico',
+            'imagen' => 'bolsos.jpg'
+        ]);
+
+        productos::create([
+            'nombre' => 'Pines',
+            'slug' => 'pines',
+            'detalle' => 'Pines elegantes con logo UEES',
+            'precio' => 5.23,
+            'descripcion' => 'Pines elegantes con logo UEES',
+            'categoria' => 'Articulos-Promocionales',
+            'tipo' => 'Fisico',
+            'imagen' => 'pines.jpg'
+        ]);
+
+        combos::create([
+            'codigo_combo' => 1,
+            'nombre_combo' => 'Combo Premium',
+            'id_producto' => 13,
+        ]);
+
+        combos::create([
+            'codigo_combo' => 1,
+            'nombre_combo' => 'Combo Premium',
+            'id_producto' => 14,
+        ]);
+
+        combos::create([
+            'codigo_combo' => 1,
+            'nombre_combo' => 'Combo Premium',
+            'id_producto' => 15,
+        ]);
+
+        combos::create([
+            'codigo_combo' => 1,
+            'nombre_combo' => 'Combo Premium',
+            'id_producto' => 17,
+        ]);
+
+        combos::create([
+            'codigo_combo' => 2,
+            'nombre_combo' => 'Combo Básico',
+            'id_producto' => 13,
+        ]);
+
+        combos::create([
+            'codigo_combo' => 2,
+            'nombre_combo' => 'Combo Básico',
+            'id_producto' => 14,
+        ]);
+
+        combos::create([
+            'codigo_combo' => 2,
+            'nombre_combo' => 'Combo Básico',
+            'id_producto' => 15,
+        ]);
+
+        combos::create([
+            'codigo_combo' => 2,
+            'nombre_combo' => 'Combo Básico',
+            'id_producto' => 16,
         ]);
     }
 }

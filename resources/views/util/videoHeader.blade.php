@@ -22,13 +22,18 @@
                             <li class="has-children">
                                 <a href="#">Peticiones</a>
                                 <ul class="dropdown arrow-top">
-                                    <li><a href="{{ url('/artes') }}">Artes</a></li>
-                                    <li><a href="#">Artículos Promocionales</a></li>
-                                    <li><a href="#">Campaña Publicitaria</a></li>
-                                    <li><a href="#">Campañas Pautadas</a></li>
-                                    <li><a href="#">Publicidad Automática - CRM</a></li>
-                                    <li><a href="#">Señaléticas / Stands</a></li>
-                                    <li><a href="#">Otros</a></li>
+                                    <li><a href="{{ url('/productos/Artes') }}">Artes</a></li>
+                                    <li><a href="{{ url('/productos/Articulos-Promocionales') }}">Artículos
+                                            Promocionales</a></li>
+                                    <li><a href="{{ url('/productos/Campana-Publicitaria') }}">Campaña Publicitaria</a>
+                                    </li>
+                                    <li><a href="{{ url('/productos/Campana-Pautada') }}">Campañas Pautadas</a>
+                                    </li>
+                                    <li><a href="{{ url('/productos/Campana-Publicitaria') }}">Publicidad Automática -
+                                            CRM</a></li>
+                                    <li><a href="{{ url('/productos/Crm') }}">Señaléticas / Stands</a>
+                                    </li>
+                                    <li><a href="{{ url('/productos/otros') }}">Otros</a></li>
                                 </ul>
                             </li>
                             <li><a href="{{ url('/eventos') }}">Eventos</a></li>

@@ -32,7 +32,7 @@
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. P
                   </p>
-                  <a href="{{ url('/artes') }}" class="btn btn-pink"><i class="fas fa-clone left"></i>Realizar
+                  <a href="{{ url('/productos/Artes') }}" class="btn btn-pink"><i class="fas fa-clone left"></i>Realizar
                     Petición</a>
                 </div>
               </div>
@@ -53,7 +53,8 @@
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. P
                   </p>
-                  <a class="btn btn-blue"><i class="fas fa-clone left"></i>Realizar Petición</a>
+                  <a href="{{ url('/productos/Articulos-promocionales') }}" class="btn btn-blue"><i
+                      class="fas fa-clone left"></i>Realizar Petición</a>
                 </div>
               </div>
 

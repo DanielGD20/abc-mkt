@@ -15,9 +15,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('artes', function () {
-    $valores = App\productos::where('categoria', 'Artes')->get();
-    return view('artes')->with('valores', $valores);
+Route::get('productos/{producto}', function ($producto) {
+    // $valores = App\productos::where('categoria', $producto)->get();
+    // return view('productos')->with('valores', $valores);
+
+    if ($producto != 'Articulos-Promocionales') {
+        $valores = App\productos::where('categoria', $producto)->get();
+        return view('productos')->with('valores', $valores);
+    } else {
+        $valores = App\productos::where('categoria', $producto)->get();
+        $combo = App\combos::all();
+        $arregloArticulos = array(
+            'valores' => $valores,
+            'combos' => $combo
+        );
+        return view('productos')->with('valores', $arregloArticulos);
+    }
 });
 
 Route::get('nosotros', function () {

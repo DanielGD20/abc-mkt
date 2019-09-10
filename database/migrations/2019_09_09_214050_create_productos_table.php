@@ -18,7 +18,7 @@ class CreateProductosTable extends Migration
             $table->string('nombre')->unique();
             $table->string('slug')->unique();
             $table->string('detalle')->nullable();
-            $table->integer('precio');
+            $table->double('precio');
             $table->text('descripcion');
             $table->string('categoria');
             $table->string('tipo');
