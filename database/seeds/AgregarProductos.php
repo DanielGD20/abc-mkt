@@ -21,7 +21,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Los Artes creados para redes sociales son las que los clientes Potenciales observarán al momento de su navegacion por las mismas',
             'categoria' => 'Artes',
             'tipo' => 'Online',
-            'imagen' => 'red-social.jpg'
+            'imagen' => 'red-social.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -32,7 +33,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Los Artes creados para Roll Up son las que los clientes Potenciales observarán al momento de su movimiento por la institución',
             'categoria' => 'Artes',
             'tipo' => 'Fisico',
-            'imagen' => 'rollup.jpg'
+            'imagen' => 'rollup.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -43,7 +45,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Los Artes creados para Backing son las que los clientes Potenciales observarán al momento de su visita en algún evento, el objetivo es que los clientes se tomen fotos con ellas, usualmente se promocionan marcas',
             'categoria' => 'Artes',
             'tipo' => 'Fisico',
-            'imagen' => 'backing.jpg'
+            'imagen' => 'backing.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -54,7 +57,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Los Artes creados para Scrolling son las que los clientes Potenciales observarán al momento de su movimiento por la institución',
             'categoria' => 'Artes',
             'tipo' => 'Fisico',
-            'imagen' => 'scrolling.jpg'
+            'imagen' => 'scrolling.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -65,7 +69,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Los Artes creados para Cartelera Digital son las que los clientes Potenciales observarán en las pantallas distribuidas por la institución',
             'categoria' => 'Artes',
             'tipo' => 'Online',
-            'imagen' => 'cartelera.jpg'
+            'imagen' => 'cartelera.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -76,7 +81,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Los Artes creados como Invitaciones son los que las personas observarán al momento de realizar un evento dentro de la institución',
             'categoria' => 'Artes',
             'tipo' => 'Online y Fisico',
-            'imagen' => 'invitaciones.jpg'
+            'imagen' => 'invitaciones.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -87,7 +93,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Los Artes creados como Dípticos son los que las personas observarán al momento de realizar una consulta acerca de mas información sobre un evento',
             'categoria' => 'Artes',
             'tipo' => 'Fisico',
-            'imagen' => 'dipticos.jpg'
+            'imagen' => 'dipticos.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -98,7 +105,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Los Artes creados como Folletos son los que las personas observarán al momento de realizar una consulta acerca de mas información sobre un evento',
             'categoria' => 'Artes',
             'tipo' => 'Online y Fisico',
-            'imagen' => 'folletos.jpg'
+            'imagen' => 'folletos.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -109,7 +117,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Los Artes creados como Diplomas son los que las personas observarán al momento de culminar sus estudios dentro de la institución',
             'categoria' => 'Artes',
             'tipo' => 'Fisico',
-            'imagen' => 'diplomas.jpg'
+            'imagen' => 'diplomas.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -120,7 +129,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Los Artes creados como Trípticos son los que las personas observarán al momento de realizar una consulta acerca de mas información sobre un evento',
             'categoria' => 'Artes',
             'tipo' => 'Online y Fisico',
-            'imagen' => 'tripticos.jpg'
+            'imagen' => 'tripticos.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -131,7 +141,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Los Artes creados con categoría de Libro son los que las personas observarán al momento adquirir el libro en cuestión',
             'categoria' => 'Artes',
             'tipo' => 'Fisico',
-            'imagen' => 'libros.jpg'
+            'imagen' => 'libros.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -142,7 +153,8 @@ class AgregarProductos extends Seeder
             'descripcion' => '',
             'categoria' => 'Otros',
             'tipo' => 'Otros',
-            'imagen' => 'otros.jpg'
+            'imagen' => 'otros.jpg',
+            'estado' => 'Actual'
         ]);
 
 
@@ -156,7 +168,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Funda utilizada para almacenar productos',
             'categoria' => 'Articulos-Promocionales',
             'tipo' => 'Fisico',
-            'imagen' => 'funda-de-regalo.jpg'
+            'imagen' => 'funda-de-regalo.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -167,7 +180,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Esfero con logo UEES',
             'categoria' => 'Articulos-Promocionales',
             'tipo' => 'Fisico',
-            'imagen' => 'esfero.jpg'
+            'imagen' => 'esfero.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -178,7 +192,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Taza conmemorativa con logo UEES',
             'categoria' => 'Articulos-Promocionales',
             'tipo' => 'Fisico',
-            'imagen' => 'taza.jpg'
+            'imagen' => 'taza.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -189,7 +204,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Libreta roja básica conmemorativa con logo UEES',
             'categoria' => 'Articulos-Promocionales',
             'tipo' => 'Fisico',
-            'imagen' => 'libreta-roja.jpg'
+            'imagen' => 'libreta-roja.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -200,7 +216,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Libreta negra premium conmemorativa con logo UEES',
             'categoria' => 'Articulos-Promocionales',
             'tipo' => 'Fisico',
-            'imagen' => 'libreta-negra.jpg'
+            'imagen' => 'libreta-negra.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -211,7 +228,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Libreta engomada A4 conmemorativa con logo UEES',
             'categoria' => 'Articulos-Promocionales',
             'tipo' => 'Fisico',
-            'imagen' => 'libreta-engomada-a4.jpg'
+            'imagen' => 'libreta-engomada-a4.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -222,7 +240,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Libreta engomada A5 conmemorativa con logo UEES',
             'categoria' => 'Articulos-Promocionales',
             'tipo' => 'Fisico',
-            'imagen' => 'libreta-engomada-a5.jpg'
+            'imagen' => 'libreta-engomada-a5.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -233,7 +252,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Libreta anillada conmemorativa con logo UEES',
             'categoria' => 'Articulos-Promocionales',
             'tipo' => 'Fisico',
-            'imagen' => 'libreta-anillada.jpg'
+            'imagen' => 'libreta-anillada.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -244,7 +264,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Libreta anillada conmemorativa con logo UEES',
             'categoria' => 'Articulos-Promocionales',
             'tipo' => 'Fisico',
-            'imagen' => 'libreta-anillada.jpg'
+            'imagen' => 'libreta-anillada.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -255,7 +276,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Sobres membretados conmemorativas con logo UEES',
             'categoria' => 'Articulos-Promocionales',
             'tipo' => 'Fisico',
-            'imagen' => 'sobres-membretados.jpg'
+            'imagen' => 'sobres-membretados.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -266,7 +288,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Hojas membretadas conmemorativas con logo UEES',
             'categoria' => 'Articulos-Promocionales',
             'tipo' => 'Fisico',
-            'imagen' => 'hojas-membretadas.jpg'
+            'imagen' => 'hojas-membretadas.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -277,7 +300,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Cartolas y credenciales con diseño UEES',
             'categoria' => 'Articulos-Promocionales',
             'tipo' => 'Fisico',
-            'imagen' => 'cartolas.jpg'
+            'imagen' => 'cartolas.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -288,7 +312,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Lanyers para el uso de credenciales con logo UEES',
             'categoria' => 'Articulos-Promocionales',
             'tipo' => 'Fisico',
-            'imagen' => 'lanyers.jpg'
+            'imagen' => 'lanyers.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -299,7 +324,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Gorras conmemorativas con logo UEES',
             'categoria' => 'Articulos-Promocionales',
             'tipo' => 'Fisico',
-            'imagen' => 'gorras.jpg'
+            'imagen' => 'gorras.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -310,7 +336,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Camisetas Polo con diseño UEES en diferentes colores',
             'categoria' => 'Articulos-Promocionales',
             'tipo' => 'Fisico',
-            'imagen' => 'camisetas-polo.jpg'
+            'imagen' => 'camisetas-polo.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -321,7 +348,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Bolsos multiuso con logo UEES',
             'categoria' => 'Articulos-Promocionales',
             'tipo' => 'Fisico',
-            'imagen' => 'bolsos.jpg'
+            'imagen' => 'bolsos.jpg',
+            'estado' => 'Actual'
         ]);
 
         productos::create([
@@ -332,7 +360,8 @@ class AgregarProductos extends Seeder
             'descripcion' => 'Pines elegantes con logo UEES',
             'categoria' => 'Articulos-Promocionales',
             'tipo' => 'Fisico',
-            'imagen' => 'pines.jpg'
+            'imagen' => 'pines.jpg',
+            'estado' => 'Actual'
         ]);
 
         combos::create([

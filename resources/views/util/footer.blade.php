@@ -14,7 +14,7 @@
 <footer id="colorlib-footer" role="contentinfo">
     <div class="container">
         <div class="row row-pb-md">
-            <div class="col-md-6 colorlib-widget">
+            <div class="col-md-6 colorlib-widget" align="center">
                 <h4>Síguenos en nuestras redes sociales</h4>
                 <ul class="colorlib-social-icons">
                     <li><a href="#"><i class="icon-twitter"></i></a></li>
@@ -25,7 +25,7 @@
                 </p>
             </div>
 
-            <div class="col-md-6" align="right">
+            <div class="col-md-6" align="center">
                 <h4>Información de contacto</h4>
                 <ul class="colorlib-footer-links">
                     <li>291 South 21th Street, <br> Suite 721 New York NY 10016</li>

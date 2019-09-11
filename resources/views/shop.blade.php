@@ -11,257 +11,31 @@
 			<div class="row">
 				<div class="col-md-10 col-md-push-2">
 					<div class="row row-pb-lg">
+						@foreach ($productos as $producto)
 						<div class="col-md-4 text-center">
 							<div class="product-entry">
-								<div class="product-img" style="background-image: url(images/item-5.jpg);">
-									<p class="tag"><span class="new">New</span></p>
+								<div class="product-img" style="background-image: url(../images/item-5.jpg);">
+									<p class="tag"><span class="new">{{ $producto -> estado }}</span></p>
 									<div class="cart">
 										<p>
-											<span class="addtocart"><a href="cart.html"><i
+											<span class="addtocart"><a href="{{ url('/cart') }}"><i
 														class="icon-shopping-cart"></i></a></span>
-											<span><a href="product-detail.html"><i class="icon-eye"></i></a></span>
-											<span><a href="#"><i class="icon-heart3"></i></a></span>
-											<span><a href="add-to-wishlist.html"><i
-														class="icon-bar-chart"></i></a></span>
+											<span><a
+													href="{{ url('product-detail/'. $producto -> id . '/'. $producto -> nombre) }}">
+													<i class="icon-eye"></i></a></span>
 										</p>
 									</div>
 								</div>
 								<div class="desc">
-									<h3><a href="product-detail.html">Floral Dress</a></h3>
-									<p class="price"><span>$300.00</span></p>
+									<h3><a href="product-detail.html">{{ $producto -> nombre }}</a></h3>
+									<p class="price"><span>{{ $producto -> detalle }}</span></p>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 text-center">
-							<div class="product-entry">
-								<div class="product-img" style="background-image: url(images/item-6.jpg);">
-									<p class="tag"><span class="sale">Sale</span></p>
-									<div class="cart">
-										<p>
-											<span class="addtocart"><a href="cart.html"><i
-														class="icon-shopping-cart"></i></a></span>
-											<span><a href="product-detail.html"><i class="icon-eye"></i></a></span>
-											<span><a href="#"><i class="icon-heart3"></i></a></span>
-											<span><a href="add-to-wishlist.html"><i
-														class="icon-bar-chart"></i></a></span>
-										</p>
-									</div>
-								</div>
-								<div class="desc">
-									<h3><a href="product-detail.html">Floral Dress</a></h3>
-									<p class="price"><span>$199.00</span> <span class="sale">$300.00</span> </p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center">
-							<div class="product-entry">
-								<div class="product-img" style="background-image: url(images/item-7.jpg);">
-									<p class="tag"><span class="new">New</span></p>
-									<div class="cart">
-										<p>
-											<span class="addtocart"><a href="cart.html"><i
-														class="icon-shopping-cart"></i></a></span>
-											<span><a href="product-detail.html"><i class="icon-eye"></i></a></span>
-											<span><a href="#"><i class="icon-heart3"></i></a></span>
-											<span><a href="add-to-wishlist.html"><i
-														class="icon-bar-chart"></i></a></span>
-										</p>
-									</div>
-								</div>
-								<div class="desc">
-									<h3><a href="product-detail.html">Floral Dress</a></h3>
-									<p class="price"><span>$300.00</span></p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center">
-							<div class="product-entry">
-								<div class="product-img" style="background-image: url(images/item-8.jpg);">
-									<div class="cart">
-										<p>
-											<span class="addtocart"><a href="cart.html"><i
-														class="icon-shopping-cart"></i></a></span>
-											<span><a href="product-detail.html"><i class="icon-eye"></i></a></span>
-											<span><a href="#"><i class="icon-heart3"></i></a></span>
-											<span><a href="add-to-wishlist.html"><i
-														class="icon-bar-chart"></i></a></span>
-										</p>
-									</div>
-								</div>
-								<div class="desc">
-									<h3><a href="product-detail.html">Floral Dress</a></h3>
-									<p class="price"><span>$300.00</span></p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center">
-							<div class="product-entry">
-								<div class="product-img" style="background-image: url(images/item-9.jpg);">
-									<p class="tag"><span class="sale">Sale</span></p>
-									<div class="cart">
-										<p>
-											<span class="addtocart"><a href="cart.html"><i
-														class="icon-shopping-cart"></i></a></span>
-											<span><a href="product-detail.html"><i class="icon-eye"></i></a></span>
-											<span><a href="#"><i class="icon-heart3"></i></a></span>
-											<span><a href="add-to-wishlist.html"><i
-														class="icon-bar-chart"></i></a></span>
-										</p>
-									</div>
-								</div>
-								<div class="desc">
-									<h3><a href="product-detail.html">Floral Dress</a></h3>
-									<p class="price"><span>$199.00</span> <span class="sale">$300.00</span> </p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center">
-							<div class="product-entry">
-								<div class="product-img" style="background-image: url(images/item-10.jpg);">
-									<p class="tag"><span class="new">New</span></p>
-									<div class="cart">
-										<p>
-											<span class="addtocart"><a href="cart.html"><i
-														class="icon-shopping-cart"></i></a></span>
-											<span><a href="product-detail.html"><i class="icon-eye"></i></a></span>
-											<span><a href="#"><i class="icon-heart3"></i></a></span>
-											<span><a href="add-to-wishlist.html"><i
-														class="icon-bar-chart"></i></a></span>
-										</p>
-									</div>
-								</div>
-								<div class="desc">
-									<h3><a href="product-detail.html">Floral Dress</a></h3>
-									<p class="price"><span>$300.00</span></p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center">
-							<div class="product-entry">
-								<div class="product-img" style="background-image: url(images/item-11.jpg);">
-									<div class="cart">
-										<p>
-											<span class="addtocart"><a href="cart.html"><i
-														class="icon-shopping-cart"></i></a></span>
-											<span><a href="product-detail.html"><i class="icon-eye"></i></a></span>
-											<span><a href="#"><i class="icon-heart3"></i></a></span>
-											<span><a href="add-to-wishlist.html"><i
-														class="icon-bar-chart"></i></a></span>
-										</p>
-									</div>
-								</div>
-								<div class="desc">
-									<h3><a href="product-detail.html">Floral Dress</a></h3>
-									<p class="price"><span>$300.00</span></p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center">
-							<div class="product-entry">
-								<div class="product-img" style="background-image: url(images/item-12.jpg);">
-									<p class="tag"><span class="new">New</span></p>
-									<div class="cart">
-										<p>
-											<span class="addtocart"><a href="cart.html"><i
-														class="icon-shopping-cart"></i></a></span>
-											<span><a href="product-detail.html"><i class="icon-eye"></i></a></span>
-											<span><a href="#"><i class="icon-heart3"></i></a></span>
-											<span><a href="add-to-wishlist.html"><i
-														class="icon-bar-chart"></i></a></span>
-										</p>
-									</div>
-								</div>
-								<div class="desc">
-									<h3><a href="product-detail.html">Floral Dress</a></h3>
-									<p class="price"><span>$300.00</span></p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center">
-							<div class="product-entry">
-								<div class="product-img" style="background-image: url(images/item-13.jpg);">
-									<p class="tag"><span class="new">New</span></p>
-									<div class="cart">
-										<p>
-											<span class="addtocart"><a href="cart.html"><i
-														class="icon-shopping-cart"></i></a></span>
-											<span><a href="product-detail.html"><i class="icon-eye"></i></a></span>
-											<span><a href="#"><i class="icon-heart3"></i></a></span>
-											<span><a href="add-to-wishlist.html"><i
-														class="icon-bar-chart"></i></a></span>
-										</p>
-									</div>
-								</div>
-								<div class="desc">
-									<h3><a href="product-detail.html">Floral Dress</a></h3>
-									<p class="price"><span>$300.00</span></p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center">
-							<div class="product-entry">
-								<div class="product-img" style="background-image: url(images/item-14.jpg);">
-									<p class="tag"><span class="new">New</span></p>
-									<div class="cart">
-										<p>
-											<span class="addtocart"><a href="cart.html"><i
-														class="icon-shopping-cart"></i></a></span>
-											<span><a href="product-detail.html"><i class="icon-eye"></i></a></span>
-											<span><a href="#"><i class="icon-heart3"></i></a></span>
-											<span><a href="add-to-wishlist.html"><i
-														class="icon-bar-chart"></i></a></span>
-										</p>
-									</div>
-								</div>
-								<div class="desc">
-									<h3><a href="product-detail.html">Floral Dress</a></h3>
-									<p class="price"><span>$300.00</span></p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center">
-							<div class="product-entry">
-								<div class="product-img" style="background-image: url(images/item-15.jpg);">
-									<p class="tag"><span class="new">New</span></p>
-									<div class="cart">
-										<p>
-											<span class="addtocart"><a href="cart.html"><i
-														class="icon-shopping-cart"></i></a></span>
-											<span><a href="product-detail.html"><i class="icon-eye"></i></a></span>
-											<span><a href="#"><i class="icon-heart3"></i></a></span>
-											<span><a href="add-to-wishlist.html"><i
-														class="icon-bar-chart"></i></a></span>
-										</p>
-									</div>
-								</div>
-								<div class="desc">
-									<h3><a href="product-detail.html">Floral Dress</a></h3>
-									<p class="price"><span>$300.00</span></p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center">
-							<div class="product-entry">
-								<div class="product-img" style="background-image: url(images/item-16.jpg);">
-									<p class="tag"><span class="new">New</span></p>
-									<div class="cart">
-										<p>
-											<span class="addtocart"><a href="cart.html"><i
-														class="icon-shopping-cart"></i></a></span>
-											<span><a href="product-detail.html"><i class="icon-eye"></i></a></span>
-											<span><a href="#"><i class="icon-heart3"></i></a></span>
-											<span><a href="add-to-wishlist.html"><i
-														class="icon-bar-chart"></i></a></span>
-										</p>
-									</div>
-								</div>
-								<div class="desc">
-									<h3><a href="product-detail.html">Floral Dress</a></h3>
-									<p class="price"><span>$300.00</span></p>
-								</div>
-							</div>
-						</div>
+						@endforeach
+
 					</div>
+					{{-- 
 					<div class="row">
 						<div class="col-md-12">
 							<ul class="pagination">
@@ -273,100 +47,78 @@
 								<li><a href="#">&raquo;</a></li>
 							</ul>
 						</div>
-					</div>
+					</div> --}}
 				</div>
+
 				<div class="col-md-2 col-md-pull-10">
 					<div class="sidebar">
 						<div class="side">
-							<h2>Categories</h2>
+							<h2>Categorías</h2>
 							<div class="fancy-collapse-panel">
-								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-group">
+
 									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingOne">
+										<div class="panel-heading">
 											<h4 class="panel-title">
-												<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-													aria-expanded="true" aria-controls="collapseOne">Men
-												</a>
+												<a href="{{ url('/shop/Artes') }}">Artes</a>
 											</h4>
 										</div>
-										<div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
-											aria-labelledby="headingOne">
-											<div class="panel-body">
-												<ul>
-													<li><a href="#">Jeans</a></li>
-													<li><a href="#">T-Shirt</a></li>
-													<li><a href="#">Jacket</a></li>
-													<li><a href="#">Shoes</a></li>
-												</ul>
-											</div>
-										</div>
 									</div>
+
 									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingTwo">
+										<div class="panel-heading">
 											<h4 class="panel-title">
-												<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-													href="#collapseTwo" aria-expanded="false"
-													aria-controls="collapseTwo">Women
-												</a>
+												<a href="{{ url('/shop/Articulos-Promocionales') }}">Artículos
+													Publicitarios</a>
 											</h4>
 										</div>
-										<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
-											aria-labelledby="headingTwo">
-											<div class="panel-body">
-												<ul>
-													<li><a href="#">Jeans</a></li>
-													<li><a href="#">T-Shirt</a></li>
-													<li><a href="#">Jacket</a></li>
-													<li><a href="#">Shoes</a></li>
-												</ul>
-											</div>
-										</div>
 									</div>
+
 									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingThree">
+										<div class="panel-heading">
 											<h4 class="panel-title">
-												<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-													href="#collapseThree" aria-expanded="false"
-													aria-controls="collapseThree">Jewelry
-												</a>
+												<a href="">Campañas Publicitarias</a>
 											</h4>
 										</div>
-										<div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
-											aria-labelledby="headingThree">
-											<div class="panel-body">
-												<ul>
-													<li><a href="#">Jeans</a></li>
-													<li><a href="#">T-Shirt</a></li>
-													<li><a href="#">Jacket</a></li>
-													<li><a href="#">Shoes</a></li>
-												</ul>
-											</div>
-										</div>
 									</div>
+
 									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingFour">
+										<div class="panel-heading">
 											<h4 class="panel-title">
-												<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-													href="#collapseFour" aria-expanded="false"
-													aria-controls="collapseThree">Jewelry
-												</a>
+												<a href="">Campañas Pautadas en redes</a>
 											</h4>
 										</div>
-										<div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
-											aria-labelledby="headingFour">
-											<div class="panel-body">
-												<ul>
-													<li><a href="#">Jeans</a></li>
-													<li><a href="#">T-Shirt</a></li>
-													<li><a href="#">Jacket</a></li>
-													<li><a href="#">Shoes</a></li>
-												</ul>
-											</div>
+									</div>
+
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a href="">CRM</a>
+											</h4>
 										</div>
 									</div>
+
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a href="">Señaléticas Stands</a>
+											</h4>
+										</div>
+									</div>
+
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a href="">Otros</a>
+											</h4>
+										</div>
+									</div>
+
 								</div>
 							</div>
 						</div>
+
+						{{-- 						
 						<div class="side">
 							<h2>Price Range</h2>
 							<form method="post" class="colorlib-form-2">
@@ -428,7 +180,7 @@
 									<a href="#" class="size size-5">xxl</a>
 								</p>
 							</div>
-						</div>
+						</div> --}}
 					</div>
 				</div>
 			</div>

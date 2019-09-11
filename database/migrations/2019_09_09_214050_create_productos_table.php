@@ -23,6 +23,7 @@ class CreateProductosTable extends Migration
             $table->string('categoria');
             $table->string('tipo');
             $table->string('imagen');
+            $table->string('estado');
             $table->timestamps();
         });
     }

@@ -15,7 +15,7 @@
 						<div class="row">
 							<div class="col-md-5">
 								<div class="product-entry">
-									<div class="product-img" style="background-image: url(images/item-7.jpg);">
+									<div class="product-img" style="background-image: url(../../images/item-7.jpg);">
 										<p class="tag"><span class="sale">Sale</span></p>
 									</div>
 									<div class="thumb-nail">
