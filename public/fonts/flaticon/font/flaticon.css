@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 24/09/2018 04:43
+  	Creation date: 19/02/2018 02:22
   	*/
 
 @font-face {
@@ -24,22 +24,16 @@
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
   font-family: Flaticon;
-  speak: none;
   font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-.flaticon-worker:before { content: "\f100"; }
-.flaticon-industry:before { content: "\f101"; }
-.flaticon-industrial-robot:before { content: "\f102"; }
-.flaticon-excavator:before { content: "\f103"; }
-.flaticon-gears:before { content: "\f104"; }
-.flaticon-agreement:before { content: "\f105"; }
-.flaticon-planet-earth:before { content: "\f106"; }
+.flaticon-car:before { content: "\f100"; }
+.flaticon-sign:before { content: "\f101"; }
+.flaticon-plane:before { content: "\f102"; }
+.flaticon-cocktail:before { content: "\f103"; }
+.flaticon-landmark:before { content: "\f104"; }
+.flaticon-island:before { content: "\f105"; }
+.flaticon-postcard:before { content: "\f106"; }
+.flaticon-boat:before { content: "\f107"; }
+.flaticon-resort:before { content: "\f108"; }
+.flaticon-around:before { content: "\f109"; }

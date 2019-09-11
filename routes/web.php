@@ -12,39 +12,60 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $url = 'inicio';
+    return view('welcome')->with('url', $url);
 });
 
-Route::get('productos/{producto}', function ($producto) {
-    // $valores = App\productos::where('categoria', $producto)->get();
-    // return view('productos')->with('valores', $valores);
+// Route::get('productos/{producto}', function ($producto) {
+//     // $valores = App\productos::where('categoria', $producto)->get();
+//     // return view('productos')->with('valores', $valores);
 
-    if ($producto != 'Articulos-Promocionales') {
-        $valores = App\productos::where('categoria', $producto)->get();
-        return view('productos')->with('valores', $valores);
-    } else {
-        $valores = App\productos::where('categoria', $producto)->get();
-        $combo = App\combos::all();
-        $arregloArticulos = array(
-            'valores' => $valores,
-            'combos' => $combo
-        );
-        return view('productos')->with('valores', $arregloArticulos);
-    }
+//     if ($producto != 'Articulos-Promocionales') {
+//         $valores = App\productos::where('categoria', $producto)->get();
+//         return view('productos')->with('valores', $valores);
+//     } else {
+//         $valores = App\productos::where('categoria', $producto)->get();
+//         $combo = App\combos::all();
+//         $arregloArticulos = array(
+//             'valores' => $valores,
+//             'combos' => $combo
+//         );
+//         return view('productos')->with('valores', $arregloArticulos);
+//     }
+// });
+
+Route::get('shop', function () {
+    $url = '';
+    return view('shop')->with('url', $url);
 });
 
-Route::get('nosotros', function () {
-    return view('nosotros');
+Route::get('product-detail', function () {
+    $url = '';
+    return view('product-detail')->with('url', $url);
 });
 
-Route::get('eventos', function () {
-    return view('eventos');
+Route::get('order-complete', function () {
+    $url = '';
+    return view('order-complete')->with('url', $url);
 });
 
-Route::get('carrito', function () {
-    return view('carrito');
+Route::get('contact', function () {
+    $url = '';
+    return view('contact')->with('url', $url);
 });
 
-Route::get('subtotal', function () {
-    return view('subtotal');
+Route::get('checkout', function () {
+    $url = '';
+    return view('checkout')->with('url', $url);
+});
+
+Route::get('cart', function () {
+    $url = '';
+    return view('cart')->with('url', $url);
+});
+
+
+Route::get('about', function () {
+    $url = '';
+    return view('about')->with('url', $url);
 });
