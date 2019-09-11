@@ -1,4 +1,12 @@
-## Sobre el sistema
+<p align="center">
+  <b>Universidad Espiritu Santo</b><br>
+  <a href="https://uees.edu.ec" target="_blank">Web de la Universidad</a> |
+  <a href="https://twitter.com/DanielGD40">Twitter de desarrollador</a>
+  <br><br>
+  <img src="http://uees.edu.ec/img/logo.png">
+</p>
+
+## Información Sobre el sistema
 
 Este es un sistema de ventas web realizado para la Universidad Espíritu Santo en el cual se podra realizar la peticion de material publicitario dentro del departamento de Marketing, además de poder observar el flujo de costos del mismo y evitar la tediosa tarea de generar reportes.
 
