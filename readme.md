@@ -1,50 +1,55 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+## Sobre el sistema
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+Este es un sistema de ventas web realizado para la Universidad Espíritu Santo en el cual se podra realizar la peticion de material publicitario dentro del departamento de Marketing, además de poder observar el flujo de costos del mismo y evitar la tediosa tarea de generar reportes.
 
-## About Laravel
+## Instrucciones de instalacion:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+- Descargar **Xampp** o **Wampp** [Descargar Wampp Aqui](http://www.wampserver.com/en/).
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Descargar Visual Studio Code o cualquier Ide de preferencia.
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+- Descargar Composer para poder utilizar los comandos del Artisan [Descargar Aqui](https://getcomposer.org/).
 
-## Learning Laravel
+- Clonar el repositorio dentro de la carpeta htdocs (Xampp) o www (Wampp).
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
+- Abrir Phpmyadmin dentro de Wampp o Xammp y crear una nueva base de datos.
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+- Una vez creada la base de datos se debe abrir el ide e inicializar la carpeta del proyecto clonado, dentro de esta de debe abrir el archivo **.env** y ahi editar los parametros de acuerdo a la base de datos.
 
-## Laravel Sponsors
+# Ej:
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](http://patreon.com/taylorotwell):
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=abc
+DB_USERNAME=root
+DB_PASSWORD=root
 
-- **[Vehikl](http://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Styde](https://styde.net)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
+- Una vez realizado todos los pasos se debe inicializar los datos dentro de la base de datos. Se abre la linea de comandos y se ingresa el comando: **php artisan migrate** (Esto inicializa las tablas dentro de la base de datos).
 
-## Contributing
+- a continuación el comando: **php db:seed** (Esto genera los datos dentro de las diferentes tablas de la base de datos).
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+- Una vez realizado lo anterior se debe crear un virtual host en el cual podamos definir la carpeta de comienzo de nuestro host.
 
-## Security Vulnerabilities
+# Nota:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+Como alternativa se puede usar la terminal con el comando: **php artisan serve** Para ejecutar un servidor local, el problema es que este no cuenta con una base de datos, es simplemente para testear el front de la aplicación.
+
+## Aprender Laravel
+
+Laravel tiene la biblioteca de documentación y video tutoriales más extensa y exhaustiva de cualquier marco de aplicación web moderno. La [documentación de Laravel](https://laravel.com/docs) es exhaustiva, completa y hace que sea muy fácil comenzar a aprender el marco.
+
+Si no está de humor para leer, [Laracasts](https://laracasts.com) contiene más de 900 tutoriales en video sobre una variedad de temas que incluyen Laravel, PHP moderno, pruebas unitarias, JavaScript y más. Aumente el nivel de habilidad de usted y de todo su equipo explorando nuestra completa biblioteca de videos.
+
+# Ejemplos de funcionalidades
+
+- [Motor de enrutamiento simple y rápido](https://laravel.com/docs/routing).
+- [Potente contenedor de inyección de dependencia](https://laravel.com/docs/container).
+- Múltiples back-end para [sesión](https://laravel.com/docs/session) y [caché](https://laravel.com/docs/cache) de almacenamiento.
+- Expresivo, intuitivo [base de datos ORM](https://laravel.com/docs/eloquent).
+- Base de datos agnóstica [migraciones de esquema](https://laravel.com/docs/migrations).
+- [Procesamiento robusto de trabajos en segundo plano](https://laravel.com/docs/queues).
+- [Transmisión de eventos en tiempo real](https://laravel.com/docs/broadcasting).
 
 ## License
 
