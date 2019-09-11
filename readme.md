@@ -16,24 +16,38 @@ Este es un sistema de ventas web realizado para la Universidad Espíritu Santo e
 
 - Una vez creada la base de datos se debe abrir el ide e inicializar la carpeta del proyecto clonado, dentro de esta de debe abrir el archivo **.env** y ahi editar los parametros de acuerdo a la base de datos.
 
-# Ej:
+## Ej:
 
+```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=abc
 DB_USERNAME=root
 DB_PASSWORD=root
+```
 
 - Una vez realizado todos los pasos se debe inicializar los datos dentro de la base de datos. Se abre la linea de comandos y se ingresa el comando: **php artisan migrate** (Esto inicializa las tablas dentro de la base de datos).
 
+```
+php artisan migrate
+```
+
 - a continuación el comando: **php db:seed** (Esto genera los datos dentro de las diferentes tablas de la base de datos).
+
+```
+php db:seed
+```
 
 - Una vez realizado lo anterior se debe crear un virtual host en el cual podamos definir la carpeta de comienzo de nuestro host.
 
-# Nota:
+## Nota:
 
 Como alternativa se puede usar la terminal con el comando: **php artisan serve** Para ejecutar un servidor local, el problema es que este no cuenta con una base de datos, es simplemente para testear el front de la aplicación.
+
+```
+php artisan serve
+```
 
 ## Aprender Laravel
 
@@ -41,7 +55,7 @@ Laravel tiene la biblioteca de documentación y video tutoriales más extensa y 
 
 Si no está de humor para leer, [Laracasts](https://laracasts.com) contiene más de 900 tutoriales en video sobre una variedad de temas que incluyen Laravel, PHP moderno, pruebas unitarias, JavaScript y más. Aumente el nivel de habilidad de usted y de todo su equipo explorando nuestra completa biblioteca de videos.
 
-# Ejemplos de funcionalidades
+## Ejemplos de funcionalidades
 
 - [Motor de enrutamiento simple y rápido](https://laravel.com/docs/routing).
 - [Potente contenedor de inyección de dependencia](https://laravel.com/docs/container).
