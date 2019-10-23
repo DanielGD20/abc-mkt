@@ -29,3 +29,18 @@ Route::get('/contact', function () {
 Route::get('/shop', function () {
     return view('front.shop');
 });
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/home', 'HomeController@contact')->name('contactus');
+
+Route::group(['prefix' => 'admin', 'mmiddleware' => ['auth', 'admin']], function () {
+    Route::get('/', function () {
+        return view('admin.index');
+    })->name('admin.index');
+
+    Route::resource('product', 'ProductsController');
+});

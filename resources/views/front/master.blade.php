@@ -71,189 +71,161 @@
 
 <body>
 
-    <div class="colorlib-loader"></div>
+    @include('front.menu')
 
-    <div id="page">
-        <nav class="colorlib-nav" role="navigation">
-            <div class="top-menu">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-2">
-                            <div id="colorlib-logo"><a href="{{ url('/') }}">ABC</a></div>
-                        </div>
-                        <div class="col-xs-10 text-right menu-1">
-                            <ul>
-                                <li><a href="{{ url('/') }}">Inicio</a></li>
-                                <li>
-                                    <a href="{{ url('/shop') }}">Productos</a>
-                                </li>
-                                <li><a href="{{ url('/about') }}">Sobre nosotros</a></li>
-                                <li><a href="{{ url('/contact') }}">Contacto</a></li>
-                                <li><a href="{{ url('') }}">Próximos eventos</a></li>
-                                <li><a href="{{ url('/cart') }}"><i class="icon-shopping-cart"></i> Carrito [0]</a></li>
+    @if ($principal)
 
-                            </ul>
+    <aside id="colorlib-hero">
+        <div class="flexslider">
+            <ul class="slides">
+                <li style="background-image: url(images/banner1.jpg);">
+                    <div class="overlay"></div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3 col-md-pull-2 col-sm-12 col-xs-12 slider-text">
+                                <div class="slider-text-inner">
+                                    <div class="desc">
+                                        <br>
+                                        <h3 class="head-1">Diseños</h3>
+                                        <h3 class="head-2">Artes</h3>
+                                        <p><a href="{{ url('/shop/Artes') }}" class="btn btn-primary btn-sm">Revisar
+                                                las
+                                                opciones</a></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </nav>
-
-
-        @if ($principal)
-
-        <aside id="colorlib-hero">
-            <div class="flexslider">
-                <ul class="slides">
-                    <li style="background-image: url(images/banner1.jpg);">
-                        <div class="overlay"></div>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-6 col-md-offset-3 col-md-pull-2 col-sm-12 col-xs-12 slider-text">
-                                    <div class="slider-text-inner">
-                                        <div class="desc">
-                                            <br>
-                                            <h3 class="head-1">Diseños</h3>
-                                            <h3 class="head-2">Artes</h3>
-                                            <p><a href="{{ url('/shop/Artes') }}" class="btn btn-primary btn-sm">Revisar
-                                                    las
-                                                    opciones</a></p>
-                                        </div>
+                </li>
+                <li style="background-image: url(images/banner2.jpg);">
+                    <div class="overlay"></div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3 col-md-pull-2 col-sm-12 col-xs-12 slider-text">
+                                <div class="slider-text-inner">
+                                    <div class="desc">
+                                        <h4 class="head-1">Campañas</h4>
+                                        <h3 class="head-2">Publicitarias</h3>
+                                        <p><a href="{{ url('/shop/Articulos-Promocionales') }}"
+                                                class="btn btn-primary btn-sm">Revisar las
+                                                opciones</a></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    <li style="background-image: url(images/banner2.jpg);">
-                        <div class="overlay"></div>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-6 col-md-offset-3 col-md-pull-2 col-sm-12 col-xs-12 slider-text">
-                                    <div class="slider-text-inner">
-                                        <div class="desc">
-                                            <h4 class="head-1">Campañas</h4>
-                                            <h3 class="head-2">Publicitarias</h3>
-                                            <p><a href="{{ url('/shop/Articulos-Promocionales') }}"
-                                                    class="btn btn-primary btn-sm">Revisar las
-                                                    opciones</a></p>
-                                        </div>
+                    </div>
+                </li>
+                <li style="background-image: url(images/banner3.jpg);">
+                    <div class="overlay"></div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3 col-md-push-3 col-sm-12 col-xs-12 slider-text">
+                                <div class="slider-text-inner">
+                                    <div class="desc">
+                                        <h3 class="head-1">Automatiza</h3>
+                                        <h3 class="head-2">Ventas</h3>
+                                        <h3 class="head-3">CRM & Mailing</h3>
+                                        <p><a href="{{ url('/shop/crm') }}" class="btn btn-primary btn-sm">Revisar
+                                                las
+                                                opciones</a></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    <li style="background-image: url(images/banner3.jpg);">
-                        <div class="overlay"></div>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-6 col-md-offset-3 col-md-push-3 col-sm-12 col-xs-12 slider-text">
-                                    <div class="slider-text-inner">
-                                        <div class="desc">
-                                            <h3 class="head-1">Automatiza</h3>
-                                            <h3 class="head-2">Ventas</h3>
-                                            <h3 class="head-3">CRM & Mailing</h3>
-                                            <p><a href="{{ url('/shop/crm') }}" class="btn btn-primary btn-sm">Revisar
-                                                    las
-                                                    opciones</a></p>
-                                        </div>
-                                    </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    @else
+
+    <aside id="colorlib-hero" class="breadcrumbs">
+        <div class="flexslider">
+            <ul class="slides">
+                <li style="background-image: url(../../images/banner1.jpg);">
+                    <div class="overlay"></div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 slider-text">
+                                <div class="slider-text-inner text-center">
+                                    <h1></h1>
+                                    <h2 class="bread">
+                                        <span>
+                                            <a href="{{ url('/') }}">Inicio</a>
+                                        </span>
+                                    </h2>
                                 </div>
                             </div>
                         </div>
-                    </li>
-                </ul>
-            </div>
-        </aside>
-
-        @else
-
-        <aside id="colorlib-hero" class="breadcrumbs">
-            <div class="flexslider">
-                <ul class="slides">
-                    <li style="background-image: url(../../images/banner1.jpg);">
-                        <div class="overlay"></div>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 slider-text">
-                                    <div class="slider-text-inner text-center">
-                                        <h1></h1>
-                                        <h2 class="bread">
-                                            <span>
-                                                <a href="{{ url('/') }}">Inicio</a>
-                                            </span>
-                                        </h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </aside>
-        @endif
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    @endif
 
 
 
 
 
-        @yield('content')
+    @yield('content')
 
-        <!--Footer importante-->
-        <div id="colorlib-subscribe">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="col-md-12 text-center">
-                            <h1 class="text-white"><i class="icon-paperplane"></i>ABC</h1>
-                        </div>
+    <!--Footer importante-->
+    <div id="colorlib-subscribe">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="col-md-12 text-center">
+                        <h1 class="text-white"><i class="icon-paperplane"></i>ABC</h1>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <footer id="colorlib-footer" role="contentinfo">
-            <div class="container">
-                <div class="row row-pb-md">
-                    <div class="col-md-6 colorlib-widget" align="center">
-                        <h4>Síguenos en nuestras redes sociales</h4>
-                        <ul class="colorlib-social-icons">
-                            <li><a href="#"><i class="icon-twitter"></i></a></li>
-                            <li><a href="#"><i class="icon-facebook"></i></a></li>
-                            <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                            <li><a href="#"><i class="icon-dribbble"></i></a></li>
-                        </ul>
-                        </p>
-                    </div>
+    <footer id="colorlib-footer" role="contentinfo">
+        <div class="container">
+            <div class="row row-pb-md">
+                <div class="col-md-6 colorlib-widget" align="center">
+                    <h4>Síguenos en nuestras redes sociales</h4>
+                    <ul class="colorlib-social-icons">
+                        <li><a href="#"><i class="icon-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                        <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                    </ul>
+                    </p>
+                </div>
 
-                    <div class="col-md-6" align="center">
-                        <h4>Información de contacto</h4>
-                        <ul class="colorlib-footer-links">
-                            <li>Km. 2,5 vía a Samborondón</li>
-                            <li><a href="tel://+593 994504722">+593 99 450 4722</a></li>
-                            <li><a href="mailto:anavelezh@uees.edu.ec">anavelezh@uees.edu.ec</a></li>
-                        </ul>
-                    </div>
+                <div class="col-md-6" align="center">
+                    <h4>Información de contacto</h4>
+                    <ul class="colorlib-footer-links">
+                        <li>Km. 2,5 vía a Samborondón</li>
+                        <li><a href="tel://+593 994504722">+593 99 450 4722</a></li>
+                        <li><a href="mailto:anavelezh@uees.edu.ec">anavelezh@uees.edu.ec</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="copy">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <p>
+        </div>
+        <div class="copy">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>
 
-                            <span class="block">
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                Copyright &copy;<script>
-                                    document.write(new Date().getFullYear());
-                                </script> Todos los derechos reservados | con <i class="icon-heart2"
-                                    aria-hidden="true"></i>
-                                por
-                                <a href="https://twitter.com/DanielGD40" target="_blank">DanielGD40 & Colorlib</a>
-                        </p>
-                    </div>
+                        <span class="block">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;<script>
+                                document.write(new Date().getFullYear());
+                            </script> Todos los derechos reservados | con <i class="icon-heart2" aria-hidden="true"></i>
+                            por
+                            <a href="https://twitter.com/DanielGD40" target="_blank">DanielGD40 & Colorlib</a>
+                    </p>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
     </div>
 
     <div class="gototop js-top">
